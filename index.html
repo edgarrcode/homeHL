@@ -21,6 +21,21 @@
         <script src="assets/js/jquery-2.1.1.min.js" type="text/javascript"></script>
         <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
         <script>/*Insert Google Analytics*/</script>
+
+        <!-- CSS for Highlights -->
+        <style type="text/css">
+            .homeHLWrapper a{text-decoration: none;}
+
+            .homeHL p{
+                color: black;
+            }
+
+            .homeHL:hover, .homeHL p:hover{
+                background-color: gainsboro;
+            }
+            
+        </style>
+
     </head>
     <body>
         <a class="sr-only sr-only-focusable" href="#mainContentArea" id="skippy"><span class="container" style="display:block;"><span class="skiplink-text">Skip to main content</span></span></a>
@@ -208,31 +223,40 @@
                                 <div class="stroke" style="width:10%;"></div>
                                 <br>
 
-<h2>Home Highlights</h2>
-<div class="homeHLWrapper">
-    <div class="col-md-4">
-    <a href="http://www.ppp.utep.edu" class="homeHL"><img alt="Professional &amp; Public Programs" src="http://www.utep.edu/extendeduniversity/_Files/images/home/dsc_7930.jpg">
-        <h3>PROFESSIONAL &amp; PUBLIC PROGRAMS</h3>
-        <p>High quality continuing education and professional training provide lifelong learning opportunities for personal enrichment, workforce and professional development and academic growth.</p>
-        <p><span href="http://www.ppp.utep.edu/" class="btn btn-primary">Learn More</span></p>
-    </a>
-    </div>
-    <div class="col-md-4"><img alt="Utep Connect" src="http://www.utep.edu/extendeduniversity/_Files/images/home/utc-girl-laptop-new-website.jpg" />
-    <h3>UTEP CONNECT</h3>
-    <p>A suite of fully online degree programs makes exceptional, affordable education accessible to anyone with the ambition to learn and the drive to succeed.</p>
-    <p><a class="btn btn-primary" href="/extendeduniversity/utepconnect/index">Learn More</a></p>
-    </div>
-    <div class="col-md-4"><img alt="Professional &amp; Public Programs" src="http://www.utep.edu/extendeduniversity/_Files/images/home/cid.png" />
-    <h3>CENTER FOR INSTRUCTIONAL DESIGN</h3>
-    <p>Our instructional designers provide online instructors with guidance on best practices in instructional design and development to help maximize students' online learning experience.</p>
-    <p><a class="btn btn-primary" href="/extendeduniversity/cid/index">Learn More</a></p>
-    </div>
-</div><!-- /homeHL -->
-<style type="text/css">
-    .homeHLWrapper .homeHL h3{
-        margin-bottom: 0;
-    }
-</style>
+                                <h2>Home Highlights</h2>
+                                <!-- Style added for link behaviour is added at the head of the file. Cannot be done
+                                with inline css. The other option is to use JavaScript-->
+
+                                <div class="homeHLWrapper">
+
+                                    <div class="col-md-4 homeHL">
+                                        <a href="http://www.ppp.utep.edu" class="row">
+                                            <img alt="Professional &amp; Public Programs" src="http://www.utep.edu/extendeduniversity/_Files/images/home/dsc_7930.jpg">
+                                            <h3>PROFESSIONAL &amp; PUBLIC PROGRAMS</h3>
+                                            <p>High quality continuing education and professional training provide lifelong learning opportunities for personal enrichment, workforce and professional development and academic growth.</p>
+                                            <p><span class="btn btn-primary">Learn More</span></p>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-4 homeHL">
+                                        <a href="/extendeduniversity/utepconnect/index" class="row">
+                                            <img alt="Utep Connect" src="http://www.utep.edu/extendeduniversity/_Files/images/home/utc-girl-laptop-new-website.jpg" />
+                                            <h3>UTEP CONNECT</h3>
+                                            <p>A suite of fully online degree programs makes exceptional, affordable education accessible to anyone with the ambition to learn and the drive to succeed.</p>
+                                            <p><span class="btn btn-primary">Learn More</span></p>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-4 homeHL">
+                                        <a href="/extendeduniversity/cid/index" class="row">
+                                            <img alt="Professional &amp; Public Programs" src="http://www.utep.edu/extendeduniversity/_Files/images/home/cid.png" />
+                                            <h3>CENTER FOR INSTRUCTIONAL DESIGN</h3>
+                                            <p>Our instructional designers provide online instructors with guidance on best practices in instructional design and development to help maximize students' online learning experience.</p>
+                                            <p><span class="btn btn-primary">Learn More</span></p>
+                                        </a>
+                                    </div>
+
+                                </div>
 
                             </div>
                             <div class="row">
